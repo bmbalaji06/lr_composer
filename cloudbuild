@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      [
+        'cp',
+        '-r',
+        'dags/*',
+        'gs://us-central1-model-544f3f11-bucket/dags/'
+      ]
